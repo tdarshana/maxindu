@@ -1,89 +1,99 @@
-body {
-	color: #333;
-	font-family: 'Segoe UI', 'Lucida Grande', Helvetica, sans-serif;
-	line-height: 1.5;
-	margin: 50px auto;
-	max-width: 800px;
+html,
+body,
+main {
+  height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-	line-height: 1em;
-	margin: 20px 0;
-}
-h1 {
-	font-size: 2.25em;
-}
-h2 {
-	font-size: 1.75em;
-}
-h3 {
-	font-size: 1.5em;
-}
-h4, h5, h6 {
-	font-size: 1.25em;
+::-moz-selection {
+  background: #34495e;
+  color: #fff;
 }
 
-a {
-	color: #08C;
-	text-decoration: none;
-}
-a:hover, a:focus {
-	text-decoration: underline;
-}
-a:visited {
-	color: #058;
+::selection {
+  background: #34495e;
+  color: #fff;
 }
 
-img {
-	max-width: 100%;
+.jumbotron {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
 }
 
-li + li {
-	margin-top: 3px;
-}
-dt {
-	font-weight: bold;
-}
-
-code {
-	background: #EEE;
-	font-family: "Consolas", "Lucida Console", monospace;
-	padding: 1px 5px;
-}
-pre {
-	background: #EEE;
-	padding: 5px 10px;
-	white-space: pre-wrap;
-}
-pre code {
-	padding: 0;
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-blockquote {
-	border-left: 5px solid #EEE;
-	margin: 0;
-	padding: 0 10px;
+.photo-cover {
+  background: #34495e url(https://static.pexels.com/photos/36487/above-adventure-aerial-air-large.jpg) no-repeat center center/cover fixed;
+  height: 100%;
+  position: relative;
 }
 
-table {
-	border-collapse: collapse;
-	width: 100%;
-}
-table + table {
-	margin-top: 1em;
-}
-thead {
-	background: #EEE;
-	text-align: left;
-}
-th, td {
-	border: 1px solid #EEE;
-	padding: 5px 10px;
+.background-primary {
+  background: #34495e;
 }
 
-hr {
-	background: #EEE;
-	border: 0;
-	height: 1px;
+.background-secondary {
+  background: #2c3e50;
+}
+
+.large {
+  font-size: 4em;
+}
+
+.medium {
+  font-size: 2em;
+}
+
+/* Header */
+.transparent {
+  background: transparent;
+}
+
+.navbar-inverse {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.thumbnail {
+  cursor: pointer;
+  position: relative;
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1abc9c;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.thumbnail:hover .thumbnail-overlay {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.full-screen {
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow-y: scroll;
+}
+
+.close-window {
+  cursor: pointer;
 }

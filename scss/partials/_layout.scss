@@ -1,0 +1,115 @@
+
+///*****************************************************
+///     Styling for Header class
+///*****************************************************
+
+
+.hdr {
+    padding: 100px 0;
+    width: 100%;
+    height: 300px;
+    display: block;
+    // @include linear-gradient( $mainGraditentTopColor , $mainGraditentBottomColor);
+    background: linear-gradient(rgba(22, 132, 205, 0.9), rgba(41, 18, 110, 0.9) ), url("../img/sl.jpeg") no-repeat center; 
+    background-size: cover; 
+}
+
+.myContent{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.myName{
+    margin: 25px 0 0 0;
+    color: $mainFontColorInv;
+    font-family: 'Vollkorn', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.subHeading{
+    margin-top: 10px;
+    color: $secondaryFontColorInv;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 32px;
+}
+
+.titleHr{
+    width: 300px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+}
+
+.nHr{
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(#efefef,#efefef);
+    opacity: 0.4;
+}
+
+.navg{
+    text-align: center;
+}
+
+.spac{
+    display:block;
+    height: 15px;
+}
+
+///**********************************************
+///     Styling for Content
+///**********************************************
+
+.mainContent {
+    margin: 60px 0;
+    width: 100%;
+    background: #fff;
+}
+
+.pWrapper{
+    width: 60%;
+    margin: 0 auto; 
+}
+
+
+
+///**********************************************
+///     Styling for Footer class
+///**********************************************
+
+.footer{
+    background-color: #efefef;
+    height: 48px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 24px
+}
+
+.footer p a {
+    font-size: 14px;
+}
+
+///**********************************************
+///     Styling for Contacts Page
+///**********************************************
+.contacts{
+    text-align: center;
+}
+
+.contacts span{
+    margin: 0 25px;
+}
+
+.contacts span a .fa {
+    font-size: 1.2em;
+    color: $hyperLinkColor;
+}
+
+

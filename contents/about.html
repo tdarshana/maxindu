@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Diamond | About</title>
+    <meta name="description" content="">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">    
+</head>
+<body>
+    <!-- Header -->
+    <header class="hdr">
+        <div class="myContent">
+            <img class="meImage" src="../img/Me.jpg" alt="Me">
+            <h1 class="myName middle">Tharindu Darshana</h1><hr class="titleHr middle">
+            <h3 class="subHeading middle">Code & Life</h3>
+        </div>
+        
+        <div class="spac"></div>
+        <!-- Navigation -->
+        <div class="navigation middle">
+        <hr class="nHr">
+        <div class="navg">
+            <ul class="topnav" id="myTopnav">
+                <li><a id="navHome" class="active" href="../index.html">Home</a></li>
+                <li><a id="navAbout" href="about.html">About</a></li>
+                <li><a id="navResume" href="#resume">R&eacute;sum&eacute;</a></li>
+                <li><a id="navContact" href="contact.html">Contact</a></li>
+                <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+            </ul>
+        </div>
+        </div>
+    <!-- End navigation -->
+
+    </header>
+    <!-- End Header -->
+    
+    
+    <main>
+    <!-- Content -->
+    <div id="mainCont" class="mainContent">
+        <div class="pWrapper">
+        <!-- Post 1 -->
+            <div class="pContainer">
+                <h2 class="pHeading middle">About</h2>
+                <p class="pContent">
+                    <span>
+                        I am a computer engineer undergraduate studying in the University of Peradeniya, Sri Lanka. 
+                        My specialty is bacically Java & Java related technologies, but I also enjoy web development with JavaScript 
+                        technologies like Node JS. Also I love open source software & development.
+                        This blog is where I give back to the internet community. 
+                    </span>
+                </p>
+                <p class="pContent">
+                    <span>
+                        I love a worthy challenge -- whether that's a technical challenge, an intellectual challenge, or a personal 
+                        challenge. Challenges are how we contextualize and inspire growth to make the world a better place.
+                        For me, the big picture is what it's all about. I aspire to be the most impactful engineer. 
+                        I do not aspire to fix every problem, but rather the highest priority. 
+                        I focus on what matters.
+                    </span>
+                </p>
+                <p class="pContent">
+                    <span>
+                        If you'd like to talk, shoot me an <a href="mailto:tharindu24darshana.com">email</a>.
+                    </span>
+                </p>    
+            </div>
+        </div>
+    </div>
+    <!-- End content -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; Tharindu Darshana 2016. All rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- JS Links -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+</body>
+</html>

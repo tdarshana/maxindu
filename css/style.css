@@ -336,6 +336,35 @@ ul.topnav li.icon {
   margin: 29px 0;
 }
 
+.pContainer> p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.pContainer> p > a {
+  font-weight: 600px;
+  font-family: inherit;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+
+.pContainer> p > strong{
+  font-family: inherit;
+  font-weight: bold;
+}
+
+code{
+  display: block;
+  padding: 15px;
+  background-color: #efefef;
+  font-family: 'Fira Mono', monospace;
+  font-size: 12px;
+  line-height: 30px;
+}
+
 .postBreak {
   margin: 8% 10%;
   border: 0;
@@ -345,3 +374,5 @@ ul.topnav li.icon {
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
+
+

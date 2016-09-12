@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DatDev</title>
+    <meta name="description" content="">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Fira+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/style.css">    
+</head>
+<body>
+    <!-- Header -->
+    <header class="hdr">
+        <div class="myContent">
+            <img class="meImage" src="../../img/Me.jpg" alt="Me">
+            <h1 class="myName middle">Tharindu Darshana</h1><hr class="titleHr middle">
+            <h3 class="subHeading middle">Code & Life</h3>
+        </div>
+        
+        <div class="spac"></div>
+        <!-- Navigation -->
+        <div class="navigation middle">
+        <hr class="nHr">
+        <div class="navg">
+            <ul class="topnav" id="myTopnav">
+                <li><a id="navHome" class="active" href="index.html">Home</a></li>
+                <li><a id="navAbout" href="contents/about.html">About</a></li>
+                <li><a id="navResume" href="contents/cv_tharinduDarshana.pdf">R&eacute;sum&eacute;</a></li>
+                <li><a id="navContact" href="contents/contact.html">Contact</a></li>
+                <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+            </ul>
+        </div>
+        </div>
+    <!-- End navigation -->
+
+    </header>
+    <!-- End Header -->
+    
+    
+    <main>
+    <!-- Content -->
+    <div id="mainCont" class="mainContent">
+        <div class="pWrapper">
+            
+            <!-- Post 1 -->
+            <div class="pContainer">
+                <h2 class="pHeading middle"><a href="">A Template for develop ES6 web application</a></h2>
+                <p class="pContent">
+                    <span>
+                        <p>
+                            In this article we will get to know about how to configure newest ES6 script on your 
+                            local machine along with transpilers for HTML and CSS.
+                        </p> 
+                        <br>
+                        <p>
+                            For development of web applications using ECMA Script 6 we can use transpilers 
+                            that transpile your Javascript code into ECMA Script 5. For this purpose we use <a href="https://babeljs.io/">Babel</a> tranpiler.
+                            And also we use SCSS transpiler to convert SCSS code into browser understandable CSS code. Also we use
+                            Jade templating machine for easy HTML coding.
+                        </p>
+                        <br>
+                        <p>
+                            Here we use <a href="http://gruntjs.com/">Grunt</a> as our major task runner. By creating Grunt watch on change task we reduced manual 
+                            integration of compile the code again and again. If you need more details on grunt task please refer 
+                            <a href="http://gruntjs.com/getting-started">getting-started</a> guide on gruntjs.com.
+                        </p>
+                        <br>
+                        <p>
+                            To configure this code & start your application develop from this code skeliton first clone this github repo to your local machine.
+                            <br>
+                            <br>
+                            <code>
+                                git clone "https://github.com/MaxIndu/dev_jade_es6_scss_watch_grunt.git"
+                            </code>
+                            <br>
+                            Then navigate into that directory using terminal (command prompt on windows). Then enter the following to install
+                            all the npm dependancies that is required to run the code correctly.
+                            <br>
+                            <br>
+                            <code>
+                                npm install
+                            </code> 
+                            <br>
+                            Then to watch changes run grunt task as follows.
+                            <br>
+                            <br>
+                            <code>
+                                grunt watch
+                            </code>
+                            <br>
+                            Now you can edit codes in src directory. When you save them grunt will automatically compile
+                             them into relevent formats. You can edit files in the directories "src/jade", "src/js", "src/scss".
+                        </p>
+                    </span>
+                </p>    
+            </div>
+
+        </div>
+    </div>
+    <!-- End content -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; Tharindu Darshana 2016. All rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- JS Links -->
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+</body>
+</html>

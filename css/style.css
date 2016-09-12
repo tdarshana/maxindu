@@ -339,7 +339,7 @@ ul.topnav li.icon {
 .pContainer> p {
   text-align: justify;
   text-justify: inter-word;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -347,7 +347,7 @@ ul.topnav li.icon {
   font-weight: 600px;
   font-family: inherit;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -361,7 +361,7 @@ code{
   padding: 15px;
   background-color: #efefef;
   font-family: 'Fira Mono', monospace;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 30px;
 }
 
